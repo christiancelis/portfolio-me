@@ -1,9 +1,9 @@
 import './style.css'
 
-    document.querySelector('#app').innerHTML = `
-    <div>
-      <ul><li>hola<li></ul>
-    </div>`
+    // document.querySelector('#app').innerHTML = `
+    // <div>
+    //   <ul><li>hola<li></ul>
+    // </div>`
 
 
 if (import.meta.hot) {
