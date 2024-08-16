@@ -1,6 +1,20 @@
 :root{
     --primary-font: "Poppins", sans-serif;
     --secundary-font:'Work Sans', sans-serif;
+    --hero-fontcolor-: #CBEAEE;
+    --hero-background: #BEA836;
+    --hero-background-dark: #363E3F;
+
+
+    --thin:100;
+    --extraligth:200;
+    --ligth:300;
+    --Regular:400;
+    --medium:500;
+    --semibold:600;
+    --bold:700;
+    --extrabold:800;
+    --back:900;
 }
 
 

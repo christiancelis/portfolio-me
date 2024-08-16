@@ -16,12 +16,11 @@ body{
 
 .background-container{
     padding: 30px 30px 0 30px;
-    background-color: rgb(221, 227, 30);
+    background-color: var(--hero-background);
 }
 
 .container{
     font-family: var(--secundary-font);
-
 }
 
 
@@ -29,6 +28,10 @@ header ul:nth-child(1){
     width: auto;
    display: flex;
    justify-content: space-between;
+}
+
+header ul li{
+    font-weight: var(--medium);
 }
 
 
@@ -74,6 +77,7 @@ header ul:nth-child(1){
     align-items: center;
     width: 100%;
     height: auto;
+    color:var(--hero-fontcolor-);
 }
 
 .img-me{
@@ -85,15 +89,17 @@ h1{
     font-family: var(--secundary-font);
     padding-top: 30px;
     font-size: 2.7rem;
-    font-weight: 600;
+    font-weight: var(--bold);
 }
 
 h2{
     font-family: var(--secundary-font);
     font-size: 1.5rem;
+    font-weight: var(--medium);
 }
 
 p{
+    font-weight: var(--ligth);
     padding-top: 20px;
     font-size: 1.2rem;
     font-family: var(--primary-font);
@@ -105,7 +111,6 @@ p{
 @media screen and (min-width: 636px){
     .background-container{
         padding: 20px 100px 0 100px;
-        background-color: rgb(221, 227, 30);
     }    
 
     .hero{
@@ -127,7 +132,6 @@ p{
         justify-content: center;
         align-items: end;
     }
-   
 
     .hero h1{
         font-size: 3.2rem;
@@ -141,6 +145,23 @@ p{
 
 }
 
+
+@media screen and (min-width:1200px) {
+    .background-container{
+        padding: 60px 300px 0 300px;
+    }
+    
+    
+    .hero h1{
+        font-size: 8rem;
+    }
+    .hero h2{
+        font-size: 5rem;
+    }
+    .hero p{
+        font-size: 2rem;
+    }
+}
 
 
 
