@@ -1,43 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <title>MyPortfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mobile.css" media="(min-width:200px) and(max-width:500px)">
+    <link rel="stylesheet" href="./css/tablet.css" media="(max-width:900px)">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
 </head>
-
 <body>
-  <div class="hero">
-      <header>
-        <nav>
-            <ul>
-                <li>Acerca de mi</li>
-                <li></li>
-                <li>Experiencia</li>
-                <li>Proyecto</li>
-                <li>Contactame</li>
-            </ul>
-        </nav>
-      </header>
-      <section class="hero-content">
-          <article class="left-hero">
-            <h1>Hola soy</h1>
-            <h2>Christian Celis</h2>
-            <p>Un desarrollador de sofware apasionado por la programacion</p>
-          </article>
-          <article class="img-hero"><img src="https://static.vecteezy.com/system/resources/previews/001/196/558/non_2x/person-png.png" alt=""></article>
-      </section>
-  </div>
+    <div class="background-container">
+        <div class="container">
+            <header>
+                <nav>
+                    <ul>
+                        <li class="img-nav"><img src="./public/dev.svg" alt=""></li>
+                        <li id="menu-mbg" class="img-nav"><img src="./public/menu-hamburguesa.svg" alt=""></li>
+                    </ul>
+                    <ul id="ul2" class="inactive">
+                        <li>Acerca de mi</li>
+                        <li><span class="linea-nav"></span></li>
+                        <li>Experiencia</li>
+                        <li>Proyectos</li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="hero">
+                <article>
+                    <h1>Hola soy</h1>
+                    <h2>Christian Celis</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ab, dignissimos nemo itaque accusantium ullam esse aut nisi aperiam modi quae asperiores ad minima perspiciatis at quas provident omnis. Optio.</p>
+                </article>
+                <article>
+                    <div class="fondo-imghero"></div>
+                    <img src="./public/me.png" alt="foto de christian">
+                </article>
+            </section>
+        </div>
 
+    </div>
+    
 
-  <script type="module" src="/main.js"></script>
+    <script src="./js/main.js"></script>
+    
 </body>
-
 </html>
