@@ -14,6 +14,25 @@ body{
     font-size: 62.5%;
 }
 
+h1,h2,h3,h4{
+    font-family: var(--secundary-font);
+    color: #CBEAEE;
+}
+
+h3{
+   
+    font-weight: var(--medium);
+    font-size: 2rem;
+    color: #CBEAEE;
+    padding-bottom: 20px;
+
+}
+
+p{
+    font-weight: var(--ligth);
+    font-family: var(--primary-font);
+}
+
 .background-container{
     padding: 30px 30px 0 30px;
     background-color: var(--hero-background);
@@ -148,19 +167,7 @@ header ul:nth-child(1){
 
 }
 
-h3{
-    font-family: var(--secundary-font);
-    font-weight: var(--medium);
-    font-size: 2rem;
-    color: #CBEAEE;
-    padding-bottom: 20px;
 
-}
-
-p{
-    font-weight: var(--ligth);
-    font-family: var(--primary-font);
-}
 
 .mvo{
     margin: 30px;
@@ -277,6 +284,37 @@ p{
     display: none;
 }
 
+.selector-proyectos{
+    display: none;
+}
+.proyectos{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.proy-container{
+    border-radius: 20px;
+    width: 300px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-proy{
+    padding: 70px;
+}
+.proy-container img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+
+
 
 
 /* Tablet */
@@ -316,7 +354,7 @@ p{
         width: 10%;
     }
 
-    .cont-ex{
+    .container-exp .exp .cont-ex{
         width: 45%;
     } 
 
@@ -344,10 +382,7 @@ p{
 
     .exp1 p{
         width: 329.04px;
-    };
-
-
-
+    }
 
 }
 
@@ -357,12 +392,9 @@ p{
         padding: 20px 170px 40px 170px;
     }
 
-    
     .container nav ul:nth-child(2) li:nth-child(2){
         display: flex;
     }
-
-   
 
     #menu-mbg{
         display: none;
