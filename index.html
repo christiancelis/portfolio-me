@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile-first.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width:853px)"> 
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width:1140px)"> 
+    <link rel="stylesheet" href="./css/full-4k.css" media="(min-width:2000px)"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="background-container">
+    <div class="background-container pad-cont">
         <div class="container">
             <header>
                 <nav>
@@ -45,16 +49,35 @@
    
     <!-- Segunda seccion -->
     <section class="perfil-profesional">
-        <div class="perfil-container">
+        <div class="perfil-container pad-cont">
             <div class="per1"> 
                 <h2>Perfil Profesional</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ipsam consequatur labore cumque nulla itaque, iure rerum, maiores vitae maxime dignissimos ad quasi inventore eum praesentium repellat quaerat doloremque sit!</p>
+                <div class="perf-links">
+                    <span><a href="">CV</a></span>
+                    <span><a href="">Linkedln</a></span>
+                </div>
             </div>
             <div class="per2">
                 <img src="./public/3dpng.png" alt="">
             </div>
         </div>
-        <section class="mvo">
+        <section class="tecno-cont pad-cont">
+            <div class="">
+                <h2>Algunas tecnologias que manejo</h2>
+            </div>
+            <div class="tecnologias">
+                <img src="./public/1.png" alt="">
+                <img src="./public/2.png" alt="">
+                <img src="./public/3.png" alt="">
+                <img src="./public/4.png" alt="">
+                <img src="./public/5.png" alt="">
+                <img src="./public/6.png" alt="">
+            </div>
+           
+           
+        </section>
+        <section class="mvo pad-cont">
             <div>
                 <article>
                     <h3>Mision</h3>
@@ -78,43 +101,49 @@
             </div>
         </section>
     </section>
-    <div class="experiencia-container">
-            <h3>Experiencia</h3>
+
+        <!-- Tercera seccion -->
+    <div class="experiencia-container pad-cont">
+            <h2>Experiencia</h2>
+
         <div class="container-exp">
             <section class="exp">
                 <div class="div-izq"></div>
                 <div class="linea-exp"><img src="./public/circulo.png" alt=""><span></span></div>
                 <div class="cont-ex p">
-                    <h2>Junio 2024</h2>
-                    <h2>Junior Back End Developer</h2>
+                    <h4>Junio 2024</h4>
+                    <h3>Junior Back End Developer</h3>
                     <h3>Try catch Factory</h3>
                     <p>Voluntario en try catch Factory implementando integraciones de salesforce, API con express</p>
                     <h4>Bucaramanga Santander, Remoto</h4>
                 </div>
             </section>
+
             <section class="exp">
                 <div class="div-izq"></div>
                 <div class="linea-exp"><img src="./public/circulo.png" alt=""><span></span></div>
                 <div class="cont-ex p">
-                    <h2>Octubre 2023 - Mayo 2024</h2>
-                    <h2>Fullstack Developer:</h2>
+                    <h4>Octubre 2023 - Mayo 2024</h4>
+                    <h3>Fullstack Developer:</h3>
                     <h3>LatinoHablantes</h3>
                     <p>Voluntariado: Diseño e implementacion de landing page,para projecto de academia de idiomas, Desarrollo de api rest con node y express.</h4>
                     <h4>Bucaramanga Santander, Remoto</h4>
                 </div>
             </section>
+
             <section class="exp">
                 <div class="div-izq"></div>
                 <div class="linea-exp"><img src="./public/circulo.png" alt=""><span></span></div>
                 <div class="cont-ex p">
-                    <h2>Septiembre 2022 - Febrero 2023 </h2>
-                    <h2>Ingeniero en TIC</h2>
+                    <h4>Septiembre 2022 - Febrero 2023 </h4>
+                    <h3>Ingeniero en TIC</h3>
                     <h3>CENS Grupo EPM</h3>
                     <p>Practicas Empresariales: Diseño e implementacion de un Dashboard para 
                         el control de costos del programa de seguros de Cens Grupo EPM.</p>
                     <h4>Cúcuta Norte de Santander, On site</h4>
                 </div>
             </section>
+
             <section class="exp">
                 <div class="div-izq"></div>
                 <div class="linea-exp"><img src="./public/circulo.png" alt=""><span></span></div>
@@ -122,31 +151,55 @@
             </section>
         </div>
     </div>
-    <div class="experiencia-container proy">
+
+        <!-- Cuarta seccion -->
+    <div class="experiencia-container proy  pad-cont">
         <h2>Proyectos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia libero eaque, numquam exercitationem asperiores aut laudantium ducimus iste voluptatibus, et quibusdam nisi quisquam, omnis itaque magnam qui aliquam reprehenderit delectus?</p>
         <section class="selector-proyectos">
         </section>
         <section class="proyectos">
+
             <div class="proy-container">
                 <img src="./public/batallaPokemon.jpg" alt="">
                 <div class="info-proy">
-                    <h2>Batalla Pokemon</h2>
-                    
+                    <h4>Batalla Pokemon</h4>
+                    <p class="desc-proy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga reprehenderit expedita voluptates ducimus alias, doloremque laudantium et. Corporis earum quo ipsa, illo et exercitationem veritatis, fuga possimus vero dolorem eum.</p>
+                    <div class="links-proy"><span>Github: <a href="">Link</a></span> <span>Demo: <a href="">Link</a></span></div>
+                    <div class="tecno"><span>Javascript</span> <span>Html</span> <span>Css</span></div>
                 </div>
             </div>
+
             <div class="proy-container">
-                <img src="./public/batallaPokemon.jpg" alt="">
+                <img src="./public/img-softdevcol.png" alt="">
                 <div class="info-proy">
-                    <h2>Batalla Pokemon</h2>
-                    
+                    <h4>Landing Page Personal</h4>
+                    <p class="desc-proy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga reprehenderit expedita voluptates ducimus alias, doloremque laudantium et. Corporis earum quo ipsa, illo et exercitationem veritatis, fuga possimus vero dolorem eum.</p>
+                    <div class="links-proy"><span>Github: <a href="https://github.com/christiancelis/WebCampus/tree/master/Proyecto">Link</a></span> <span>Demo: <a href="https://christiancelis.github.io/WebCampus/Proyecto/index.html">Link</a></span></div>
+                    <div class="tecno"><span>Javascript</span> <span>Html</span> <span>Css</span></div>
                 </div>
             </div>
+
             <div class="proy-container">
-                <img src="./public/batallaPokemon.jpg" alt="">
+                <img src="./public/ferrteria.png" alt="">
                 <div class="info-proy">
-                    <h2>Batalla Pokemon</h2>
-                    
+                    <h4>Ecommerce -Ferreteria</h4>
+                    <p class="desc-proy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga reprehenderit expedita voluptates ducimus alias, doloremque laudantium et. Corporis earum quo ipsa, illo et exercitationem veritatis, fuga possimus vero dolorem eum.</p>
+                    <div class="links-proy"><span>Github: <a href="">Link</a></span> <span>Demo: <a href="">Link</a></span></div>
+                    <div class="tecno"><span>Javascript</span> <span>Html</span> <span>Css</span></div>
                 </div>
+            </div>
+           
+        </section>
+    </div>
+
+    <!-- Quinta seccion -->
+    <div class="certificaciones pad-cont">
+        <h2 class="title">Titulos y</p>
+        <section class="cert-container">
+            <div>
+                <p>Ingeniero en Tecnologias de la informacion y las comunicaciones</p>
+
             </div>
         </section>
     </div>
