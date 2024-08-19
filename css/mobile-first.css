@@ -201,6 +201,8 @@ header ul:nth-child(1){
 .mvo{
     margin: 30px;
     background-color: #1d8089;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #6e02cc, #3e3eba,#2b09c3) 1;
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
@@ -233,7 +235,8 @@ header ul:nth-child(1){
 }
 
 .experiencia-container{
-    background-color: var( --hero-background-dark);
+    padding-top: 100px;
+    background-color: var(--hero-background-dark);
 }
 
 .exp1 .linea-exp{
@@ -247,15 +250,35 @@ header ul:nth-child(1){
 }
 
 .linea-exp span{
+    animation-name: brillo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
     width: 2px;
     height: 100%;
-    background-color: rgb(228, 196, 20);
+    border: 3px solid;
+    border-image: linear-gradient(45deg, #6e02cc, #3e3eba,#2b09c3) 1;
 }
+/* @keyframes brillo {
+    0%{
+        opacity: 2%;    
+    }
+    50%{
+        opacity: 100%;    
+    }
+
+    /* 100%{
+        border-image: linear-gradient(45deg, #6e02cc, #3e3eba,#2b09c3) 1;  
+
+}
+    } */
+
 
 .linea-exp img{
     position: absolute;
     width: 20px;
     top: 0%;
+    z-index: 3;
 }
 .cont-ex{
     padding: 0px 0 40px 0;
@@ -300,11 +323,11 @@ header ul:nth-child(1){
 }
 
 .proy{
-    background-color: #2d4047  ;
+    background-color: var(--hero-background-dark);
 }
 
 .proy h4{
-   color: #2d4047; 
+   color: #f2f4f5; 
 }
 
 .proyectos{
@@ -317,24 +340,25 @@ header ul:nth-child(1){
 }
 
 .proy-container{
-    border-radius: 20px;
     width: 300px;
-    background-color: rgb(208, 199, 199);
+    border: 1px dotted;
+    background-color: #171716;
+    border-radius: 20px 20px 20px 20px;
+    border-image: linear-gradient(45deg, #6e02cc, #3e3eba,#2b09c3) 1;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 .info-proy{
-    color: #2d4047;
+    color: #ffffff;
     padding: 20px;
 }
 .proy-container img{
     width: 100%;
     border-radius: 20px 20px 0 0;
+    
 }
-
-
 
 .links-proy{
     padding: 10px 0 10px 0;
@@ -347,7 +371,7 @@ header ul:nth-child(1){
 }
 
 .info-proy h2, .info-proy .desc-proy{
-    color: #2d4047;
+    color: #727d80;
 }
 
 .desc-proy{
@@ -364,7 +388,7 @@ header ul:nth-child(1){
 .tecno span{
     text-align: center;
     border-radius: 20px;
-    border: solid rgb(88, 85, 85) 2px;
+    border: solid rgb(229, 216, 216) 2px;
     padding: 1px 10px;
     display: flex;
     flex-wrap: wrap;
@@ -395,8 +419,38 @@ header ul:nth-child(1){
     width: 110px;
 }
 
+.contacto{
+    /* background-color: var(--hero-background-dark); */
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background: rgb(240,189,4);
+    background: -moz-linear-gradient(90deg, rgba(240,189,4,1) 0%, rgba(62,77,186,1) 71%, rgba(44,23,136,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(240,189,4,1) 0%, rgba(62,77,186,1) 71%, rgba(44,23,136,1) 100%);
+    background: linear-gradient(90deg, rgba(240,189,4,1) 0%, rgba(62,77,186,1) 71%, rgba(44,23,136,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0bd04",endColorstr="#2c1788",GradientType=1);
+}
+.img-contacto{
+    display: none;
+}
 
 
+.img-contacto img{
+    width: 10px;
+}
+
+
+footer{
+    background-color: var(--hero-background-dark);
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+}
 
 
 

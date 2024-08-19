@@ -173,6 +173,35 @@
         display: block;
     }
 
+    .linea-exp{
+        position: relative;
+    }
+
+    .linea{
+        position: absolute;
+        top: 0;
+        margin: 0 auto;
+        width: 4px;
+        height: 70px;
+        background: rgb(110,2,204);
+background: linear-gradient(90deg, rgb(80, 5, 115) 0%, rgb(149, 0, 255) 56%, rgb(39, 10, 170) 100%);
+        z-index: 1;
+        animation-name: color-movement;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes color-movement {
+        0%{
+            top: 10px;
+        }
+        100%{
+            top:100%;
+        }
+    }
+
+
     .cert-container{
         overflow:auto;
      }
@@ -199,6 +228,32 @@
         width: 100%;
         height: 400px;
         margin-top: 80px;
+    }
+
+    .tecnologias img{
+        animation-name: movement;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        -o-animation-direction:alternate-reverse;
+        animation-timing-function:linear;
+        animation-fill-mode: both;
+    }
+
+    @keyframes movement{
+        0% {
+            padding-bottom: 0px;
+          }
+        
+        25%{
+            padding-bottom: 5px;
+        }
+        50% {
+            padding-bottom: 0px;
+          }
+        
+        100%{
+            padding-bottom: 5px;
+        }
     }
 
     .tecnologias img:nth-child(1){
@@ -247,4 +302,17 @@
         left: 800px;
         z-index: 10;
         width: 80px;
+    }
+    .contacto{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .img-contacto{
+        display: block;
+    }
+    .img-contacto img{
+        width: 100px;
     }

@@ -57,6 +57,7 @@ body h3{
 
     .exp:nth-child(2) .linea-exp{
         order: 1;
+       
     }
     .exp:nth-child(2) .div-izq{
         order: 2;
