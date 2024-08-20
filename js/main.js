@@ -17,3 +17,22 @@ menumbg.addEventListener("click",(e)=>{
 
 
 
+const textElement = document.getElementById("text-hero");
+
+const text = "Christian Celis"
+let index = 1;
+speed = 300 / 2;
+
+const writeText = () => {
+    textElement.innerText = text.slice(0, index)
+    index++
+
+    if (index > text.length) {
+        index = 1
+    }
+
+    setTimeout(writeText, speed)
+}
+
+
+writeText()
