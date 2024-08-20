@@ -233,28 +233,15 @@ background: linear-gradient(90deg, rgb(80, 5, 115) 0%, rgb(149, 0, 255) 56%, rgb
     }
 
     .tecnologias img{
-        animation-name: movement;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-        -o-animation-direction:alternate-reverse;
-        animation-timing-function:linear;
-        animation-fill-mode: both;
+        animation: movement 3s ease-in-out infinite;
     }
 
     @keyframes movement{
-        0% {
-            padding-bottom: 0px;
-          }
-        
-        25%{
-            padding-bottom: 5px;
+        0%, 100% {
+            transform: translateY(-4px); 
         }
         50% {
-            padding-bottom: 0px;
-          }
-        
-        100%{
-            padding-bottom: 5px;
+            transform: translateY(4px);
         }
     }
 
