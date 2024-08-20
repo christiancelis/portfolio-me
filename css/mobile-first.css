@@ -58,6 +58,17 @@ body h3{
 
  /*Hero */
 
+li{
+    font-family: var(--secundary-font);
+}
+
+#ul2 li a{
+    color:rgb(255, 255, 255);
+}
+
+#ul2 li a:hover{
+    color: rgb(33, 2, 2);
+}
 
 .background-container{
     background-color: var(--hero-background);

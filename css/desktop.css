@@ -29,6 +29,8 @@
         font-size: 1.7rem;
     }
 
+    
+
     .container nav ul:nth-child(2) li:nth-child(2){
         display: flex;
     }

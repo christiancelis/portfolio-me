@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <title>Portfolio</title>
+    <link rel="icon" href="./public/dev.svg">
+    <title>Christian Celis Dev</title>
 </head>
 <body>
     <div class="background-container pad-cont">
@@ -23,11 +23,11 @@
                         <li id="menu-mbg" class="img-nav"><img src="./public/menu-hamburguesa.svg" alt=""></li>
                     </ul>
                     <ul id="ul2" class="inactive">
-                        <li>Acerca de mi</li>
+                        <li><a href="#per1">Acerca de mi</a></li>
                         <li><span id="linea-nav"></span></li>
-                        <li>Experiencia</li>
-                        <li>Proyectos</li>
-                        <li>Contactame</li>
+                        <li><a href="#container-exp">Experiencia</a></li>
+                        <li><a href="#proy">Proyectos</a></li>
+                        <li><a href="#contacto">Contactame</a></li>
                     </ul>
                 </nav>
             </header>
@@ -51,12 +51,12 @@
     <!-- Segunda seccion -->
     <section class="perfil-profesional">
         <div class="perfil-container pad-cont">
-            <div class="per1"> 
+            <div class="per1" id="per1"> 
                 <h2>Perfil Profesional</h2>
                 <p>Especializado en desarrollo Backend con Java, mi meta es llegar a ser referente en la industria, logrando altas capacidades de resolucion de problemas e innovacion, Me caracteriza una gran curiosidad y una rápida capacidad de aprendizaje</p>
                  <div class="perf-links">
-                    <span><a href="">CV</a></span>
-                    <span><a href="">Linkedln</a></span>
+                    <span><a href="https://www.canva.com/design/DAGKCAMD4Hc/ctu942jzzQD8bgoXg6syRA/edit?utm_content=DAGKCAMD4Hc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">CV</a></span>
+                    <span><a href="www.linkedin.com/in/christian-celis-1266ba245" target="_blank">Linkedln</a></span>
                 </div>
             </div>
             <div class="per2">
@@ -105,10 +105,10 @@
     </section>
 
         <!-- Tercera seccion -->
-    <div class="experiencia-container pad-cont">
+    <div class="experiencia-container pad-cont" id="container-exp">
             <h2>Experiencia</h2>
 
-        <div class="container-exp">
+        <div class="container-exp" >
             <section class="exp">
                 <div class="div-izq"></div>
                 <div class="linea-exp"><img src="./public/circulo.png" alt=""><span></span><div class="linea"></div></div>
@@ -155,7 +155,7 @@
     </div>
 
         <!-- Cuarta seccion -->
-    <div class="experiencia-container proy  pad-cont">
+    <div class="experiencia-container proy  pad-cont" id="proy">
         <h2>Proyectos</h2>
         <p>"Cada proyecto, ya sea personal o en el trabajo, es un reflejo de mi pasión y dedicación. Cada uno de ellos muestra cómo la tecnología puede hacer una verdadera diferencia en nuestras vidas."</p>
         <section class="selector-proyectos">
@@ -235,7 +235,7 @@
             </div>  
         </section>
     </div>
-    <div class="contacto pad-cont">
+    <div class="contacto pad-cont" id="contacto">
         <section class="fm-cont">
             <h2>Contactame</h2>
             <p>Correo: cristian_celis10@hotmail.com</p>
